@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="author" content="Oscar Millan">
+  <meta name="description" content="pagina web de cafeteria moon coffe">
+  <meta name="keywords" content="HTML,CSS,JavaScript">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Moon Coffe</title>
+  <link rel="icon" href="imagenes/favicon.png" type="image/x-icon">
+
+  <!-- AOS -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+  <!--bootstrap-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+
+  <!-- iconos bootstrap -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+
+  <link rel="stylesheet" href="style.css">
+
+  <!--google fonts-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&family=Rubik+Dirt&family=Share+Tech+Mono&display=swap"
+    rel="stylesheet">
+
+</head>
+
+<body>
+
+  <div class="alert alert-dimissible fade show mb-0 ">
+    <strong>ofertas especiles de febrero </strong>
+    <button class="btn-close" data-bs-dismiss="alert"></button>
+  </div>
+
+  <!--barra de navegacion-->
+
+
+  <nav class="navbar navbar-expand-md sticky-top d-flex justify-content-center">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <img src="imagenes/logo.svg" width="80" alt="Logo de la página web">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse"  aria-expanded="false" aria-label="Toggle navigation" aria-controls="navbarTogglerDemo01" data-bs-target="#navbar-toggler">
+        <span class="toggler-icon"></span>
+        <span class="toggler-icon"></span>
+        <span class="toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbar-toggler">
+        <ul class="navbar-nav align-items-center">
+          <li class="nav-item">
+            <a class="nav-link" href="#inicio">inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#acerca_de">acerca de</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#galeria">galeria</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#menu">menú</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contacto">Contacto</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+
+
+  <!--seccion inicio-->
+  <section id="inicio">
+    <div class="bg-image"></div>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-9">
+          <div class="bg-text">
+            <h2>conoce nuestro menú</h2>
+            <hr>
+            <p>un menú excelente para todo tipo de gustos,
+              variado y delicioso</p>
+            <button type="button" class="btn btn-lg">
+              Menú
+            </button>
+          </div>
+
+
+        </div>
+        <div class="col">
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- seccion especiales -->
+
+  <section id="especiales">
+    <div class="container text-center">
+      <span class="line">
+        <h1>especiales</h1>
+        <hr>
+        <span class="box">
+        </span>
+      </span>
+      <br>
+      <div class="row row-cols-1 row-cols-md-3">
+        <div class="col"  data-aos="flip-left">
+          <div class="card">
+            <div class="card-body text-center">
+              <img src="imagenes/affogato.jpg" class="rounded-pill mx-auto d-block pt-3" width="100"
+                alt="cafe affogato">
+              <br>
+              <h4 class="card-title">affogato</h4>
+              <p class="card-text">Un affogato es un postre italiano a base de café. Por lo general consiste en una
+                cucharada de helado de vainilla
+                coronada o "ahogada" con un chorro de espresso caliente.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col"  data-aos="flip-up">
+          <div class="card">
+            <div class="card-body text-center">
+              <img src="imagenes/black.jpg" class="rounded-pill mx-auto d-block pt-3" width="100" alt="cafe affogato">
+              <br>
+              <h4 class="card-title">black</h4>
+              <p class="card-text">Es una bebida que se obtiene a partir de los granos tostados y molidos de los frutos
+                de la planta del café; es
+                altamente estimulante por su contenido de cafeína, una sustancia psicoactiva.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col"  data-aos="flip-right">
+          <div class="card">
+            <div class="card-body text-center">
+              <img src="imagenes/mocha.jpg" class="rounded-pill mx-auto d-block pt-3" width="100" alt="cafe affogato">
+              <br>
+              <h4 class="card-title">mocha</h4>
+              <p class="card-text">es una variante del café con leche. Como este, suele llevar un tercio de expreso y
+                dos tercios de leche vaporizada, pero
+                se añade una parte de chocolate, normalmente en forma de jarabe de chocolate,</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- seccion acerca de -->
+
+  <section id="acerca_de">
+    <div class="container text-center">
+      <span class="line ">
+        <h1>Acerca de</h1>
+        <hr>
+        <span class="box">
+        </span>
+      </span>
+      <div class="row pt-5">
+        <div class="col-md-5">
+          <img class="img-fluid" src="imagenes/acerca_de.jpg" alt="imagen sobre la cafeteria">
+        </div>
+        <div class="col-md-7 text-start">
+          <h2>nuestra historia</h2>
+          <p class="pt-3">MoonCoffee, es una marca de café, salen al
+            mercado en la década de 1980, comercializando
+            la producción de la Hacienda San Antonio, ubicada
+            en la localidad de San Antonio, Municipio de
+            Chilpancingo de los bravo, Guerrero México .</p>
+          <p>Cuatro años después de su llegada abrió su primera
+            sucursal ubicada en el emblemático acueducto
+            de la ciudad de México un 5 de diciembre de 1986.
+            Su gusto por la repostería y la cocina nació desde
+            la infancia gracias a su mamá,
+            una excelente repostera.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- seccion comentarios de los clientes -->
+
+  <section id="comentarios">
+    <h2>Comentarios de los clientes</h2>
+    <div class="container d-flex justify-content-center">
+
+      <div id="demo" class="carousel carousel-dark slide pt-4" data-bs-ride="carousel">
+
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+          <button type="button" data-bs-target="#demo" data-bs-slide-to="1">
+          </button>
+          <button type="button" data-bs-target="#demo" data-bs-slide-to="2">
+          </button>
+        </div>
+
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class=" card d-block text-center">
+              <img src="imagenes/cliente_1.jpg" alt="foto de cliente_1" class="card-img-top comentario-imagen">
+              <div class="card-body">
+                <h4 class="card-title">Rob Esperanza</h4>
+                <p class="card text">Segunda visita. Da la impresión que mejoró la calidad del servicio. Hay que poner
+                  atención a los detalles, Los postres
+                  muy buenos en todos sentidos al igual que las bebidas. Croissants dejémoslo en calidad aceptable.</p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class=" card d-block text-center">
+              <img src="imagenes/cliente_2.jpg" alt="foto de cliente_2" class="card-img-top comentario-imagen">
+              <div class="card-body">
+                <h4 class="card-title">Silvia hell</h4>
+                <p class="card text">El lugar es muy lindo, el servicio es bueno. La carta no es muy amplia, es más
+                  café. Lo que me parece excesivo son los
+                  precios de los pasteles. Pero en general es un lugar muy bonito y agradable.</p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class=" card d-block text-center">
+              <img src="imagenes/cliente_3.jpg" alt="foto de cliente_3" class="card-img-top comentario-imagen">
+              <div class="card-body">
+                <h4 class="card-title">Jhon doe</h4>
+                <p class="card text">Segunda visita. Da la impresión que mejoró la calidad del servicio. Hay que poner
+                  atención a los detalles, Los postres
+                  muy buenos en todos sentidos al igual que las bebidas. Croissants dejémoslo en calidad aceptable.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <buttton class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </buttton>
+        <buttton class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </buttton>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Galeria -->
+  <section id="galeria">
+    <div class="text-center">
+      <span class="line ">
+        <h1>Acerca de</h1>
+        <hr>
+        <span class="box">
+        </span>
+      </span>
+    </div>
+
+    <div class="container-fluid">
+      <div class="row row-cols-2 row-cols-md-3 pt-5 d-flex justify-content-center">
+        <div class="col">
+          <img class="img-fluid" src="imagenes/galeria_1.jpg" alt="imagen de galeria 1">
+        </div>
+        <div class="col">
+          <img class="img-fluid" src="imagenes/galeria_2.jpg" alt="imagen de galeria 2">
+        </div>
+        <div class="col">
+          <img class="img-fluid" src="imagenes/galeria_3.jpg" alt="imagen de galeria 3">
+        </div>
+        <div class="col">
+          <img class="img-fluid" src="imagenes/galeria_4.jpg" alt="imagen de galeria 4">
+        </div>
+        <div class="col">
+          <img class="img-fluid" src="imagenes/galeria_5.jpg" alt="imagen de galeria 5">
+        </div>
+        <div class="col">
+          <img class="img-fluid" src="imagenes/galeria_6.jpg" alt="imagen de galeria 6">
+        </div>
+        <div class="col">
+          <img class="img-fluid" src="imagenes/galeria_7.jpg" alt="imagen de galeria 7">
+        </div>
+        <div class="col">
+          <img class="img-fluid" src="imagenes/galeria_8.jpg" alt="imagen de galeria 8">
+        </div>
+        <div class="col">
+          <img class="img-fluid" src="imagenes/galeria_9.jpg" alt="imagen de galeria 9">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- menú -->
+  <section id="menu">
+    <div class="text-center">
+      <span class="line ">
+        <h1>menú</h1>
+        <hr>
+        <span class="box">
+        </span>
+      </span>
+    </div>
+    <div class="container-fluid " data-aos="fade-up">
+      <div class="row row-cols-2 row-cols-md-4 text-center">
+        <div class="col p-2">
+          <div class="card tarjeta-menu">
+            <div class="card-body text-center">
+              <img src="imagenes/black.jpg" class="img-fluid" alt="cafe affogato">
+              <br>
+              <h4 class="card-title">black</h4>
+              <p class="card-text">- solo cafe</p>
+            </div>
+          </div>
+        </div>
+        <div class="col p-2">
+          <div class="card tarjeta-menu">
+            <div class="card-body text-center">
+              <img src="imagenes/latte.jpg" class="img-fluid" alt="cafe latte">
+              <h4 class="card-title">latte</h4>
+              <p class="card-text">expreso <br> leche al vapor</p>
+            </div>
+          </div>
+        </div>
+        <div class="col p-3">
+          <div class="card tarjeta-menu">
+            <div class="card-body text-center">
+              <img src="imagenes/capuccino.jpg" class="img-fluid" alt="cafe capuccino">
+              <br>
+              <h4 class="card-title">capuccino</h4>
+              <p class="card-text">café exprés <br> leche al vapor</p>
+            </div>
+          </div>
+        </div>
+        <div class="col p-2">
+          <div class="card tarjeta-menu">
+            <div class="card-body text-center">
+              <img src="imagenes/americano.jpg" class="img-fluid" alt="cafe americano">
+              <br>
+              <h4 class="card-title">americano</h4>
+              <p class="card-text">expreso<br>agua caliente</p>
+            </div>
+          </div>
+        </div>
+        <div class="col p-2">
+          <div class="card tarjeta-menu">
+            <div class="card-body text-center">
+              <img src="imagenes/expresso.jpg" class="img-fluid" alt="cafe espresso">
+              <br>
+              <h4 class="card-title">Espresso</h4>
+              <p class="card-text">1 oz de café expreso</p>
+            </div>
+          </div>
+        </div>
+        <div class="col p-2">
+          <div class="card tarjeta-menu">
+            <div class="card-body text-center">
+              <img src="imagenes/mocha.jpg" class="img-fluid" alt="cafe mocha">
+              <br>
+              <h4 class="card-title">Mocha</h4>
+              <p class="card-text">expreso <br>chocolate <br>leche al vapor</p>
+            </div>
+          </div>
+        </div>
+        <div class="col p-2">
+          <div class="card tarjeta-menu">
+            <div class="card-body text-center">
+              <img src="imagenes/affogato.jpg" class="img-fluid" alt="cafe Affogato">
+              <br>
+              <h4 class="card-title">Affogato</h4>
+              <p class="card-text">café exprés<br>Helado</p>
+            </div>
+          </div>
+        </div>
+        <div class="col p-2">
+          <div class="card tarjeta-menu">
+            <div class="card-body text-center">
+              <img src="imagenes/irish.jpg" class="img-fluid" alt="cafe Irish">
+              <br>
+              <h4 class="card-title">Irish</h4>
+              <p class="card-text">-café<br> -whisky <br> -azúcar<br>-crema</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contacto">
+
+    <div class="text-center m-5">
+      <span class="line ">
+        <h1>Contacto</h1>
+        <hr>
+        <span class="box">
+        </span>
+      </span>
+    </div>
+
+
+    <div class="container">
+      <form>
+        <div class="row">
+          <div class="col">
+            <input type="text" class="form-control" placeholder="Nombre" name="name">
+          </div>
+          <div class="col">
+            <input type="email" class="form-control" placeholder="correo electronico" name="email">
+          </div>
+        </div>
+        <div class="row row-cols-1 pt-4">
+          <div class="col">
+            <textarea class="form-control" rows="5" id="comment" placeholder="Mensaje" name="text"></textarea>
+          </div>
+          <div class="col pt-3">
+            <button type="button" class="btn btn-dark btn-lg">Enviar</button>
+          </div>
+        </div>
+        <div class="col">
+          <iframe class="container-fluid p-5"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1055.8845316381273!2d-99.11052548090835!3d19.423435811691835!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85ce0026db097507%3A0x54061076265ee841!2sCiudad%20de%20M%C3%A9xico%2C%20CDMX!5e0!3m2!1ses-419!2smx!4v1675371197917!5m2!1ses-419!2smx"
+            allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </form>
+
+    </div>
+
+  </section>
+
+  <!-- footer -->
+
+  <footer class="seccion-oscura ">
+    <div class="container">
+      <div class="row row-cols-md-3 text-center">
+        <div class="col">
+          <div class="icono_centrado"><i class="bi bi-clock"></i></div>
+          <h3>horario</h3>
+          <hr>
+          <p>Lun-Vie: 08.00 A.M - 10.00 P.M
+            Sábado: 08.00 a.m - 02.00 p.m
+            Domingo: Cerrado
+            Medias festivos: 08.00 a.m - 02.00 p.m
+            Jue: 08.00 A.M - 02.00 P.M</p>
+        </div>
+        <div class="col">
+          <div class="icono_centrado"><i class="bi bi-geo-alt"></i></div>
+          <h3>Ubicación</h3>
+          <hr>
+          <p>Postal
+            Postal, Benito Juárez, 03410 Ciudad de México, CDMX</p>
+        </div>
+        <div class="col">
+          <div class="row row-cols-2 row-cols-sm-1">
+            <div class="col">
+              <div class="icono_centrado"><i class="bi bi-envelope"></i></div>
+              <h3>Email</h3>
+              <hr>
+              <p>mooncoffe@Reposteria.com</p>
+            </div>
+            <div class="col">
+              <div class="icono_centrado"><i class="bi bi-phone"></i></div>
+              <h3>Telefono</h3>
+              <hr>
+              <p>(747)4737990</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr>
+    <p class="text-center pt-4 text-lg">Creado por <strong>Oscar Millan</strong> (2023) &#169;</p>
+
+  </footer>
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+    crossorigin="anonymous"></script>
+
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+
+</body>
+
+
+
+</html>
