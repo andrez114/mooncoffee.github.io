@@ -98,10 +98,12 @@
 }
 
 /*------------------------- inicio-------------------------------------  */
+
 #inicio {
-    height: 600px;
-    position: relative;
+    height:600px;
 }
+
+
 
 .bg-image {
     /* The image used */
@@ -109,6 +111,7 @@
 
     /* Add the blur effect */
     filter: blur(2px) brightness(0.26);
+    -webkit-filter: blur(2px) brightness(0.26); 
 
     /* Full height */
     height: 100%;
