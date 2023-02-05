@@ -34,9 +34,9 @@
 
 <body>
 
-  <div class="alert alert-dimissible fade show mb-0 ">
-    <strong>ofertas especiles de febrero </strong>
-    <button class="btn-close" data-bs-dismiss="alert"></button>
+  <div class="alert alert-dimissible fade show mb-0 d-flex">
+    <strong class="p-2  flex-grow-1">Hasta un 20% de descuento en Febrero</strong>
+    <button class="btn-close p-2" data-bs-dismiss="alert"></button>
   </div>
 
   <!--barra de navegacion-->
@@ -47,8 +47,8 @@
       <a class="navbar-brand" href="#">
         <img src="imagenes/logo.svg" width="80" alt="Logo de la página web">
       </a>
-      <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse"
-        aria-label="Toggle navigation" data-bs-target="#navbar-toggler">
+      <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" aria-label="Toggle navigation"
+        data-bs-target="#navbar-toggler">
         <span class="toggler-icon"></span>
         <span class="toggler-icon"></span>
         <span class="toggler-icon"></span>
@@ -86,10 +86,12 @@
       <hr>
       <p>un menú excelente para todo tipo de gustos,
         variado y delicioso</p>
-      <button type="button" class="btn btn-lg">
-        Menú
-      </button>
-      </div>
+      <a href="#menu">
+        <button type="button" class="btn btn-light btn-lg">
+          Menú
+        </button>
+      </a>
+    </div>
   </section>
 
   <!-- seccion especiales -->
@@ -129,7 +131,7 @@
             </div>
           </div>
         </div>
-        <div class="col"  data-aos="flip-right">
+        <div class="col" data-aos="flip-right">
           <div class="card">
             <div class="card-body text-center">
               <img src="imagenes/mocha.jpg" class="rounded-pill mx-auto d-block pt-3" width="100" alt="cafe affogato">
