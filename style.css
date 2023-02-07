@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Philosopher:ital,wght@1,700&family=Poppins:ital,wght@0,100;0,200;1,100&display=swap');
 
-body{
+body {
     font-family: "Poppins", sans-serif;
-        font-weight: normal;
-        font-style: normal;
+    font-weight: normal;
+    font-style: normal;
 }
 
 /*------------------------- nav bar-------------------------------------  */
@@ -109,7 +109,7 @@ body{
 #inicio {
     height: 600px;
     position: relative;
-    
+
 }
 
 .bg-image {
@@ -118,7 +118,7 @@ body{
 
     /* Add the blur effect */
     filter: blur(2px) brightness(0.26);
-    -webkit-filter: blur(2px) brightness(0.26); 
+    -webkit-filter: blur(2px) brightness(0.26);
 
     /* Full height */
     height: 100%;
@@ -224,7 +224,7 @@ body{
 }
 
 #comentarios h2 {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Philosopher', sans-serif;
     font-style: italic;
     display: flex;
     justify-content: center;
@@ -255,23 +255,25 @@ body{
 }
 
 #galeria img {
-    padding-bottom: 1rem;
+    margin-bottom: 1rem;
 }
 
 #galeria img:hover {
-    -webkit-animation: slide-fwd-center 0.45s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-    animation: slide-fwd-center 0.45s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    border: #082d3c double 1px;
+    animation: rotate-scale-up 0.35s linear forwards;
 }
 
-@-webkit-keyframes slide-fwd-center {
+@keyframes rotate-scale-up {
     0% {
-        -webkit-transform: translateZ(0);
-        transform: translateZ(0);
+
+        transform: scale(0.9);
     }
 
+
     100% {
-        -webkit-transform: translateZ(160px);
-        transform: translateZ(160px);
+
+        transform: scale(1.1);
+
     }
 }
 
