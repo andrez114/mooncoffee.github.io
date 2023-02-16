@@ -114,7 +114,7 @@ body {
 
 .bg-image {
     /* The image used */
-    background-image: url("imagenes/inicio.jpg");
+    background-image: url("imagenes/inicio_440w.jpg");
 
     /* Add the blur effect */
     filter: blur(2px) brightness(0.26);
@@ -127,6 +127,12 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+@media only screen and (min-width: 440px) {
+    .bg-image {
+        background-image: url('imagenes/inicio.jpg');
+    }
 }
 
 .bg-text {
